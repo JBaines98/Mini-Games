@@ -1,0 +1,49 @@
+.comp{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    height: 650px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgb(174, 188, 201);
+}
+/* .buttonMargin{
+    margin-left: 15px;
+    margin-right: 15px;
+} */
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.td{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(174, 188, 201);
+}
+.mole{
+    width: 100px;
+    height: 60px;
+    background-color: rgb(174, 188, 201);
+}
+.gameOver{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: lightcoral;
+}
+.button{
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aqua;
+    margin-left: 200px;
+}

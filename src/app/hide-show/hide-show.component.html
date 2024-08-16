@@ -1,0 +1,116 @@
+<mat-card class="comp">
+    <div>
+        <h2>
+            <strong>
+                Whack 'O' Mole
+            </strong>
+        </h2>
+    </div>
+    <br>
+    <table class="table">
+        <tr>
+            <td>
+                <app-timer></app-timer>
+            </td>
+            <td>
+                <app-high-score></app-high-score>
+            </td>
+            <td>
+                <app-score></app-score>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table *ngIf="!isGameOver" class="table">
+        <tr>
+            <td class="td">
+                <button *ngIf="showIndex === 1" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 1" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 2" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 2" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 3" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 3" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td class="td">
+                <button *ngIf="showIndex === 4" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 4" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 5" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 5" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 6" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 6" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td class="td">
+                <button *ngIf="showIndex === 7" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 7" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 8" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 8" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+            <td class="td">
+                <button *ngIf="showIndex === 9" class="buttonMargin" (click)="numberClicked()">
+                    <img src="assets/whack-a-mole.png" class="mole">
+                </button>
+                <button *ngIf="showIndex !== 9" class="buttonMargin" (click)="bunnyClicked()">
+                    <img src="assets/rabbit.jpg" class="mole">
+                </button>
+            </td>
+        </tr>
+    </table>
+    <mat-card *ngIf="isGameOver" class="gameOver">
+        <mat-card-content>
+            <strong>
+                GAME OVER.
+            </strong>
+            <button mat-flat-button color="primary" (click)="refreshClicked()" class="button">
+                TRY AGAIN?
+            </button>
+        </mat-card-content>
+    </mat-card>
+</mat-card>
+
