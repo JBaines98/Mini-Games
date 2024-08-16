@@ -1,0 +1,108 @@
+<mat-card class="comp">
+    <div>
+        <h2>
+            <strong>
+                Naughts & Crosses
+            </strong>
+        </h2>
+    </div>
+    <br>
+    <div>
+        <strong>Select your symbol.</strong>
+        <mat-radio-group [(ngModel)]="symbolSelected">
+            <mat-radio-button value="X">
+                <strong>X</strong>
+            </mat-radio-button>
+            <mat-radio-button value="O">
+                <strong>O</strong>
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <br>
+    <button mat-flat-button color="primary" (click)="refreshClicked()" class="button">
+        RESET?
+    </button>
+    <br>
+    <table class="table" *ngIf="!isGameOver">
+        <tr>
+            <td class="spacing">
+                <button (click)="positionClicked(0,0)">
+                    <img *ngIf="positions[0][0] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[0][0] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[0][0] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(0,1)">
+                    <img *ngIf="positions[0][1] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[0][1] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[0][1] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(0,2)">
+                    <img *ngIf="positions[0][2] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[0][2] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[0][2] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td class="spacing">
+                <button (click)="positionClicked(1,0)">
+                    <img *ngIf="positions[1][0] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[1][0] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[1][0] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(1,1)">
+                    <img *ngIf="positions[1][1] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[1][1] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[1][1] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(1,2)">
+                    <img *ngIf="positions[1][2] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[1][2] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[1][2] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td class="spacing">
+                <button (click)="positionClicked(2,0)">
+                    <img *ngIf="positions[2][0] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[2][0] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[2][0] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(2,1)">
+                    <img *ngIf="positions[2][1] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[2][1] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[2][1] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+            <td class="spacing">
+                <button (click)="positionClicked(2,2)">
+                    <img *ngIf="positions[2][2] === 'X'"  src="assets/cross.png" class="cross">
+                    <img *ngIf="positions[2][2] === 'O'" src="assets/naught.png" class="cross">
+                    <img *ngIf="positions[2][2] === ''" src="assets/empty.png" class="cross">
+                </button>
+            </td>
+        </tr>
+    </table>
+    <mat-card *ngIf="isGameOver" class="gameOver">
+        <mat-card-content>
+            <h2>
+                GAME OVER.
+            </h2>
+            <br>
+            <strong>
+                {{winner}} IS THE WINNER!
+            </strong>
+        </mat-card-content>
+    </mat-card>
+</mat-card>
