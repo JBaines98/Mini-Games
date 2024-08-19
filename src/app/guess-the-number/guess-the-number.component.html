@@ -1,0 +1,45 @@
+<mat-card class="comp">
+    <div>
+        <h2>
+            <strong>
+                Guess The Number
+            </strong>
+        </h2>
+    </div>
+    <br>
+    <mat-card class="card">
+        <div>
+            <strong>
+                I am currently thinking of a number. Can you guess it?
+            </strong>
+        </div>
+    </mat-card>
+
+    <br>
+    <mat-card class="card2">
+        <div>
+            <strong>Guesses remaining:</strong>
+        </div>
+        <div>
+            <strong>
+                {{numberOfGuessesRemaining}}
+            </strong>
+        </div>
+    </mat-card>
+    <br>
+    <div>
+        <mat-form-field>
+            <mat-label>Your guess</mat-label>
+            <input matInput [(ngModel)]="numberGuessed">
+        </mat-form-field>
+        <button mat-flat-button color="primary" type="number" (click)="guessClicked()" class="button">
+            Guess
+        </button>
+    </div>
+    <br>
+    <mat-card class="card3">
+        <!-- @for(number of arrayOfNumbersGuessed; track number){} -->
+         @for (item of arrayOfNumbersGuessed; track $index) {}
+    </mat-card>
+
+</mat-card>

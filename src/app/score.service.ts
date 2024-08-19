@@ -30,3 +30,4 @@ export class ScoreService {
     this.behaviourGameOver$.next(this.isGameOver);
   }
 }
+``

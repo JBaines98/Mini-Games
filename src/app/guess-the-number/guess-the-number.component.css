@@ -1,0 +1,72 @@
+.comp{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    height: 650px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(174, 188, 201);
+}
+.button{
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+.card2{
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 280px;
+    height: 80px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.card3{
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 280px;
+    height: 80px;
+    background-color: rgb(211, 220, 27);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.card{
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 280px;
+    height: 80px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
